@@ -1,0 +1,63 @@
+<div class="container my-4">
+  <!-- upper part  -->
+  <div
+    class="upperpart d-flex w-100 justify-content-between  p-2 rounded-2"
+  >
+    <div><span class="text-success fw-bold">RI</span></div>
+    <div>
+      <span>
+        <i class="fa-solid fa-expand" style="color: #768dd0"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-trash-can px-2" style="color: #ff0000;"></i>
+      </span>
+    </div>
+  </div>
+<div>
+  <app-afi></app-afi>
+</div>
+  <!-- map  -->
+  <div class="map-container w-100">
+    <div id="map" class="w-100 p-0">
+      <div class="topleft">
+        <button class="btn bg-white topbtn disabled">
+          <i class="fa-solid fa-ruler-vertical"></i>
+        </button>
+        <button class="btn bg-white mx-2 topbtn">
+          <i class="fa-solid fa-share-from-square"></i>
+        </button>
+        <button class="btn bg-white topbtn disabled">
+          <i class="fa-solid fa-tower-cell"></i>
+        </button>
+        <button class="btn bg-white mx-2 topbtn disabled">
+          <i class="fa-solid fa-phone"></i>
+        </button>
+      </div>
+<!-- legend data  -->
+      <div class="legenddata">
+        <span>
+          <div class="redpoints"></div>
+          <span class="px-1 fw-bold">{{ data.legends[0].name }}</span>
+          <span>{{ data.legends[0].count }}</span>
+          <span class="px-1">({{ data.legends[0].percentage }})%</span>
+          <div class="yellowpoints"></div>
+          <span class="px-1 fw-bold">{{ data.legends[1].name }}</span>
+          <span>{{ data.legends[1].count }}</span>
+          <span class="px-1">({{ data.legends[1].percentage }})%</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- lower part  -->
+  <div class="w-100 mt-2">
+    <button class="btn buttonbtn btn-light w-100 border">
+      <div class="d-flex justify-content-between py-1">
+        <div><span class="text-success">Map Setting</span></div>
+        <div>
+          <span><i class="text-success fa-solid fa-angle-right"></i></span>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>

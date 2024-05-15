@@ -1,0 +1,15 @@
+
+    
+<div class="w-100 border-black bg-white title rounded-2">
+    <mat-chip-grid #chipGrid aria-label="Enter fruits">
+        @for (title of titles; track title) {
+          <mat-chip-row class="bg-success">
+          <div >
+              <span class="text-white " >{{title.name}}</span> 
+                  <div class="close d-inline-block px-1"><i class="fa-solid fa-xmark text-white" ></i></div>
+          </div>
+          </mat-chip-row>
+        }
+      </mat-chip-grid>
+  
+</div>
